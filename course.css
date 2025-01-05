@@ -1,0 +1,195 @@
+/* General Body Styling */
+body {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    background: #1e1e30; /* Darker background for modern look */
+    color: #e0e0ff; /* Light color for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #2d2d44;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #9e94ff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    color: #e0e0ff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #9e94ff;
+}
+
+.header-buttons .btn {
+    background: transparent;
+    border: 2px solid #9e94ff;
+    color: #9e94ff;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header-buttons.btn:hover {
+    background: #9e94ff;
+    color: #1e1e30;
+}
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: #e0e0ff;
+}
+
+.hero-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #A29BFE;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    color: #a6afd3;
+}
+
+/* Course Categories */
+.course-categories {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.category-btn {
+    background-color: transparent;
+    border: 2px solid #9e94ff;
+    color: #9e94ff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.category-btn:hover {
+    background: linear-gradient(90deg, #6A0DAD, #A29BFE, #1E1E3F); /* Dark purple gradient */
+    background-size: 500%; /* Make it larger for smoother animation */
+    animation: moveLED 5s infinite linear;
+    box-shadow: 0 0 20px rgba(162, 155, 254, 0.6), 0 0 40px rgba(106, 13, 173, 0.6), 0 0 60px rgba(30, 30, 63, 0.6); /* Soft purples */;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #6A0DAD, #A29BFE, #1E1E3F); /* Dark purple gradient */
+    background-size: 500%; /* Make it larger for smoother animation */
+    animation: moveLED 5s infinite linear;
+    box-shadow: 0 0 20px rgba(162, 155, 254, 0.6), 0 0 40px rgba(106, 13, 173, 0.6), 0 0 60px rgba(30, 30, 63, 0.6); /* Soft purples */
+}
+
+
+@keyframes moveLED {
+    0% {
+        background-position: 0%;
+        box-shadow: 0 0 20px rgba(162, 155, 254, 0.6), 0 0 40px rgba(106, 13, 173, 0.6), 0 0 60px rgba(30, 30, 63, 0.6);
+    }
+    50% {
+        background-position: 100%;
+        box-shadow: 0 0 30px rgba(106, 13, 173, 0.6), 0 0 50px rgba(30, 30, 63, 0.6), 0 0 70px rgba(162, 155, 254, 0.6);
+    }
+    100% {
+        background-position: 0%;
+        box-shadow: 0 0 20px rgba(162, 155, 254, 0.6), 0 0 40px rgba(106, 13, 173, 0.6), 0 0 60px rgba(30, 30, 63, 0.6);
+    }
+}
+
+
+/* Courses Grid */
+.courses-section {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual Course Card */
+.course-card {
+    background: #2d2d44;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #e0e0ff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 20px;
+}
+
+.course-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.course-description {
+    font-size: 1em;
+    color: #cfcfdf;
+}
+
+.course-link {
+    color: #9e94ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.course-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2d2d44;
+    color: #cfcfdf;
+    font-size: 0.9em;
+}

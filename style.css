@@ -1,0 +1,180 @@
+/* General Body Styling */
+body {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    background:#1C1C1E;
+    margin: 0;
+    padding: 0;
+    color: rgb(243, 237, 237);
+}
+
+/* Left Section for Title */
+.left {
+    display: inline-block;
+    position: absolute;
+    font-size: 37px;
+    font-weight: 600;
+    left: 23px;
+    top: 26px;
+    /* border: 2px solid red; */
+    padding: 10px;
+    color: #A29BFE;
+}
+
+/* Mid Section for Navigation */
+.mid {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.navebar {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+.navebar li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navebar li a {
+    color: rgb(236, 234, 234);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 24px;
+}
+
+.navebar li a:hover, .navebar li a.active {
+    text-decoration: underline;
+    color:   #7B70EA;
+}
+
+/* Right Section for Buttons */
+.right {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    display: inline-block;
+}
+
+/* Button Styling */
+.btn {
+    margin: 5px;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid snow;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    transition: 0.3s ease;
+}
+
+/* LED Effect on Hover */
+.btn:hover {
+    background: linear-gradient(90deg, #6A0DAD, #A29BFE, #1E1E3F); /* Dark purple gradient */
+    background-size: 500%; /* Make it larger for smoother animation */
+    animation: moveLED 5s infinite linear;
+    box-shadow: 0 0 20px rgba(162, 155, 254, 0.6), 0 0 40px rgba(106, 13, 173, 0.6), 0 0 60px rgba(30, 30, 63, 0.6); /* Soft purples */
+}
+
+/* Keyframes for moving LED effect */
+@keyframes moveLED {
+    0% {
+        background-position: 0%;
+        box-shadow: 0 0 20px rgba(162, 155, 254, 0.6), 0 0 40px rgba(106, 13, 173, 0.6), 0 0 60px rgba(30, 30, 63, 0.6);
+    }
+    50% {
+        background-position: 100%;
+        box-shadow: 0 0 30px rgba(106, 13, 173, 0.6), 0 0 50px rgba(30, 30, 63, 0.6), 0 0 70px rgba(162, 155, 254, 0.6);
+    }
+    100% {
+        background-position: 0%;
+        box-shadow: 0 0 20px rgba(162, 155, 254, 0.6), 0 0 40px rgba(106, 13, 173, 0.6), 0 0 60px rgba(30, 30, 63, 0.6);
+    }
+}
+
+
+/* Cards Section */
+.cards-section {
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 150px auto;
+    max-width: 80%;
+}
+
+/* Individual Cards Styling */
+.newcards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
+    width: 100%;
+    height: 300px;
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Hover effect for the cards */
+.newcards:hover {
+    box-shadow: 0 0 30px rgba(162, 155, 254, 0.6), 0 0 20px rgba(106, 13, 173, 0.6), 0 0 30px rgba(30, 30, 63, 0.6);
+
+}
+
+/* Card Image */
+.newcards img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Card Content */
+.newcards .card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card Title */
+.newcards .card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #A29BFE;
+}
+
+/* Card Description */
+.newcards .card-description {
+    font-size: 1em;
+    color: white;
+}
+
+/* Anchor Tag (A) Styling */
+.cards-section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.slogan-section {
+    background-color: #1C1C1E; /* Background color */
+    padding: 30px 1px; /* Less padding on the sides */
+    color:#A29BFE; /* Light text color */
+    max-width: 800px; /* Limit the width of the slogan container */
+    margin: 0 auto; /* Center the slogan section */
+}
+
+.slogan {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}

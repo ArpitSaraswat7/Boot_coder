@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App Development</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body with soft gradient */
+        body {
+            background: linear-gradient(135deg, #d6d4f7, #d2f5f0);
+            color: #000000;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+
+        /* Main container styling */
+        .container {
+            width: 70%;
+            max-width: 900px;
+            padding: 40px 20px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative; /* For positioning the moving elements */
+        }
+
+        /* Header section with glass effect */
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        header:hover {
+            transform: scale(1.02);
+        }
+        header h1 {
+            font-size: 2.8rem;
+            color: #258d7b;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #111212;
+        }
+
+        /* CTA button styling */
+        .cta-button {
+            display: inline-block;
+            background-color: #5db3b3;
+            color: #fff;
+            padding: 12px 25px;
+            margin-top: 20px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #77c4c4;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+        }
+
+        /* Section styling with glass effect */
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .section:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 30px rgba(255, 0, 150, 0.4), 0 4px 10px rgba(0, 200, 255, 0.4);
+        }
+        .section h2 {
+            font-size: 2.2rem;
+            color: #00ffd4;
+            margin-bottom: 15px;
+        }
+        .section p {
+            font-size: 1.1rem;
+            color: #0c0c0c;
+        }
+
+        /* Moving elements styles */
+        .moving-shape {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: move 10s linear infinite;
+        }
+
+        /* Keyframes for moving animations */
+        @keyframes move {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Left shape */
+        .left-shape {
+            background: rgba(255, 0, 150, 0.5);
+            left: -60px; /* Position it off-screen */
+            top: 100px;
+            animation-name: move-left; /* Custom animation for left shape */
+            animation-duration: 4s;
+        }
+
+        /* Right shape */
+        .right-shape {
+            background: rgba(0, 150, 255, 0.5);
+            right: -60px; /* Position it off-screen */
+            top: 200px;
+            animation-name: move-right; /* Custom animation for right shape */
+            animation-duration: 4s;
+        }
+
+        /* Keyframes for left moving animation */
+        @keyframes move-left {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(20px); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Keyframes for right moving animation */
+        @keyframes move-right {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(-20px); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <h1>App Development</h1>
+            <p>Become an expert in building mobile applications from scratch using modern technologies.</p>
+            <a href="#courses" class="cta-button">Start Learning Now</a>
+        </header>
+
+        <section id="introduction" class="section">
+            <h2>Introduction</h2>
+            <p>App Development refers to the process of creating software applications for mobile devices, such as smartphones and tablets. App developers design, code, and test apps, ensuring they run smoothly across various platforms.</p>
+        </section>
+
+        <section id="what-is-appdev" class="section">
+            <h2>What is App Development?</h2>
+            <p>App development encompasses creating mobile apps for platforms like iOS and Android. App developers handle front-end user interfaces as well as back-end functionalities, ensuring apps perform well, are secure, and offer an excellent user experience.</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills Required</h2>
+            <p>To become an app developer, you need to master a range of skills:</p>
+            <ul>
+                <li><strong>Languages:</strong> Java, Swift, Kotlin, Dart (Flutter)</li>
+                <li><strong>Frameworks:</strong> React Native, Flutter, Xamarin</li>
+                <li><strong>Databases:</strong> Firebase, SQLite, Realm</li>
+                <li><strong>APIs:</strong> RESTful APIs, GraphQL</li>
+                <li><strong>Version Control:</strong> Git, GitHub</li>
+                <li><strong>Deployment & Stores:</strong> Google Play Store, Apple App Store</li>
+            </ul>
+        </section>
+
+        <section id="benefits" class="section">
+            <h2>Benefits of Becoming an App Developer</h2>
+            <p>As an app developer, you will be able to create engaging applications that users rely on every day. The demand for app developers is increasing as mobile usage grows, providing numerous opportunities for a rewarding career.</p>
+        </section>
+
+        <section id="courses" class="section">
+            <h2>Explore Our App Development Courses</h2>
+            <p>Ready to dive into app development? Check out our comprehensive courses that will teach you how to build both iOS and Android applications using modern technologies.</p>
+            <a href="your-courses-page-link-here" class="cta-button">Explore Courses</a>
+        </section>
+
+        <!-- Moving Elements -->
+        <div class="moving-shape left-shape"></div>
+        <div class="moving-shape right-shape"></div>
+    </div>
+
+</body>
+</html>

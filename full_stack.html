@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full Stack Development</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body with soft gradient */
+        body {
+            background: linear-gradient(135deg, #73C2BE, #04030f);
+            color: #000000;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Sidebar styling with frosted glass effect */
+        .sidebar {
+            position: fixed;
+            width: 220px;
+            height: 100vh;
+            padding: 20px;
+            background: linear-gradient(135deg, #73C2BE, #04030f);
+            backdrop-filter: blur(10px);
+            box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+            color: #000000;
+        }
+
+        /* Sidebar heading */
+        .sidebar h3 {
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            color: #2A2B2A;
+        }
+
+        /* Sidebar list styling */
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        /* Sidebar link hover effect */
+        .sidebar ul li a:hover {
+            color: #534B62;
+        }
+
+        /* Main container styling */
+        .container {
+            width: 70%;
+            max-width: 900px;
+            padding: 40px 20px;
+            margin-left: 240px; /* Adjusted for sidebar */
+            text-align: center;
+        }
+
+        /* Header section with glass effect */
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        header:hover {
+            transform: scale(1.02);
+        }
+        header h1 {
+            font-size: 2.8rem;
+            color: #258d7b;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #111212;
+        }
+
+        /* CTA button styling */
+        .cta-button {
+            display: inline-block;
+            background-color: #5db3b3;
+            color: #fff;
+            padding: 12px 25px;
+            margin-top: 20px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #77c4c4;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+        }
+
+        /* Section styling with glass effect */
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .section:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 30px rgba(255, 0, 150, 0.4), 0 4px 10px rgba(0, 200, 255, 0.4);
+        }
+        .section h2 {
+            font-size: 2.2rem;
+            color:#258d7b;
+            margin-bottom: 15px;
+        }
+        .section p {
+            font-size: 1.1rem;
+            color: #0c0c0c;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#what-is-fullstack">What is Full Stack?</a></li>
+            <li><a href="#skills">Skills Required</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#courses">Courses</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <h1>Full Stack Development</h1>
+            <p>Master the complete web development process – from front-end to back-end.</p>
+            <a href="#courses" class="cta-button">Start Learning Now</a>
+        </header>
+
+        <section id="introduction" class="section">
+            <h2>Introduction</h2>
+            <p>Full Stack Development refers to the ability to work on both client-side (front-end) and server-side (back-end) portions of web applications. Full stack developers handle databases, servers, systems engineering, and clients, offering a complete skill set for building complex applications.</p>
+        </section>
+
+        <section id="what-is-fullstack" class="section">
+            <h2>What is Full Stack Development?</h2>
+            <p>Full stack developers have a holistic understanding of the web development process. They can work on the visual elements of a website (front-end) and the server-side functionalities (back-end), making them highly versatile. Full stack developers also manage databases, APIs, and cloud services to create fully functional web applications.</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills Required</h2>
+            <p>To become a full stack developer, you need to master a variety of skills:</p>
+            <ul>
+                <li><strong>Front-end:</strong> HTML, CSS, JavaScript, Frameworks (React, Angular, Vue)</li>
+                <li><strong>Back-end:</strong> Node.js, Express, Python, Ruby on Rails</li>
+                <li><strong>Databases:</strong> SQL, NoSQL (MongoDB, PostgreSQL)</li>
+                <li><strong>Version Control:</strong> Git, GitHub</li>
+                <li><strong>Deployment & Hosting:</strong> AWS, Heroku, Docker</li>
+            </ul>
+        </section>
+
+        <section id="benefits" class="section">
+            <h2>Benefits of Becoming a Full Stack Developer</h2>
+            <p>As a full stack developer, you gain the flexibility to work on multiple parts of an application, making you a valuable asset to any team. The demand for full stack developers is growing, offering lucrative career opportunities across industries.</p>
+        </section>
+
+        <section id="courses" class="section">
+            <h2>Explore Our Full Stack Courses</h2>
+            <p>Ready to dive into full stack development? Check out our comprehensive courses that will guide you through both front-end and back-end technologies, giving you the skills needed to build complete web applications.</p>
+            <a href="your-courses-page-link-here" class="cta-button">Explore Courses</a>
+        </section>
+    </div>
+
+</body>
+</html>

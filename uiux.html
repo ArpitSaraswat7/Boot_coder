@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI/UX Design</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body with gradient background */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #73C2BE, #04030f);
+            color: #000000;
+        }
+
+        /* Container for main content */
+        .container {
+            width: 70%;
+            max-width: 900px;
+            padding: 40px 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Header section with glass effect */
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        header:hover {
+            transform: scale(1.02);
+        }
+        header h1 {
+            font-size: 2.8rem;
+            color: #ffffffa5;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+        }
+
+        /* CTA button styling */
+        .cta-button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 12px 25px;
+            margin-top: 20px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #3399ff;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+        }
+
+        /* Section styling with frosted glass and hover effects */
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .section:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 30px rgba(255, 0, 150, 0.4), 0 4px 10px rgba(0, 200, 255, 0.4);
+        }
+        .section h2 {
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        .section p {
+            font-size: 1.1rem;
+            color: #d9d9d9;
+        }
+
+        /* Image styling */
+        .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>UI/UX Design</h1>
+        <p>Master the art of creating intuitive and beautiful user interfaces with cutting-edge design principles.</p>
+        <a href="#courses" class="cta-button">Start Learning Now</a>
+    </header>
+
+    <div class="container">
+
+        <section id="introduction" class="section">
+            <h2>Introduction</h2>
+            <p>UI/UX Design refers to the process of designing user interfaces and experiences that are intuitive, aesthetically pleasing, and user-friendly. Designers create layouts, wireframes, and prototypes to ensure users have a seamless experience.</p>
+        </section>
+
+        <section id="what-is-appdev" class="section">
+            <h2>What is UI/UX Design?</h2>
+            <p>UI/UX Design combines creativity and problem-solving to enhance how users interact with digital products, ensuring they are both functional and visually appealing.</p>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills Required</h2>
+            <p>To excel in UI/UX Design, you need to master the following skills:</p>
+            <ul>
+                <li><strong>Design Tools:</strong> Figma, Sketch, Adobe XD</li>
+                <li><strong>Prototyping:</strong> InVision, Marvel, Axure</li>
+                <li><strong>Wireframing:</strong> Balsamiq, Whimsical</li>
+                <li><strong>User Research:</strong> Surveys, Interviews, Usability Testing</li>
+                <li><strong>Design Principles:</strong> Typography, Color Theory, Layout</li>
+                <li><strong>Front-End Basics:</strong> HTML, CSS, JavaScript (optional)</li>
+            </ul>
+        </section>
+
+        <section id="benefits" class="section">
+            <h2>Benefits of Becoming a UI/UX Designer</h2>
+            <p>UI/UX designers are in high demand as companies strive to create user-friendly apps and websites. This career offers the chance to blend creativity with technical skills and shape the future of digital interaction.</p>
+        </section>
+
+        <section id="courses" class="section">
+            <h2>Explore Our UI/UX Design Courses</h2>
+            <p>Ready to dive into UI/UX Design? Check out our detailed courses that will guide you through the process of creating stunning user interfaces and experiences.</p>
+            <a href="your-courses-page-link-here" class="cta-button">Explore Courses</a>
+        </section>
+
+    </div>
+
+</body>
+</html>
